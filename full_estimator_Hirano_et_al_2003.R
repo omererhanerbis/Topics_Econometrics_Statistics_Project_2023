@@ -143,7 +143,7 @@ tau <- function(p)
     summand <- summand + Y[i,1] * t[i,1] / (p[i,1]) - ( Y[i,1] * (1-t[i,1]) / (1 - p[i,1]) )
   }
   tau <- 1/n * summand
-  ifelse(p == p_est, tau <- 4/3 * tau, tau <- tau)
+  #ifelse(p == p_est, tau <- 4/3 * tau, tau <- tau)
   return(tau)
 }
 
